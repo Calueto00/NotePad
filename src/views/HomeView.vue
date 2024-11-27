@@ -46,7 +46,9 @@ const notes = ref({});
 </script>
 
 <template>
-  <main>
-    <h1>merda toda caralho</h1>
+  <main class="grid grid-cols-2 gap-4">
+    <div v-for="(note, index) in notes" :key="index" class="border w-full p-3">
+       <h2 class="text-xl font-bold">{{ note.title }}</h2>
+    </div>
   </main>
 </template>

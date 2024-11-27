@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <main class="relative max-w-[540px] mx-auto border h-[100vh] p-3">
+  <main class="relative max-w-[540px] mx-auto border h-[100vh] p-3 bg-zinc-900 text-white">
     <div class="flex items-center justify-between py-3 border-b">
       <button>
         burger
