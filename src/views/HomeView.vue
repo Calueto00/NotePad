@@ -46,9 +46,15 @@ const notes = ref({});
 </script>
 
 <template>
-  <main class="grid grid-cols-2 gap-4">
-    <div v-for="(note, index) in notes" :key="index" class="border w-full p-3">
+  <main class="grid grid-cols-2 gap-4 p-2">
+    <div v-for="(note, index) in notes" :key="index" class="border w-full p-3 rounded-lg shadow-md">
        <h2 class="text-xl font-bold">{{ note.title }}</h2>
+       <p class="">
+        {{ note.content }}
+       </p>
+       <router-link to="#" class="bg-gray-200 px-3 rounded-full text-sm">
+        All
+       </router-link>
     </div>
   </main>
 </template>
