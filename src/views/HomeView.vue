@@ -47,6 +47,6 @@ const notes = ref({});
 
 <template>
   <main>
-    
+    <h1>merda toda caralho</h1>
   </main>
 </template>
