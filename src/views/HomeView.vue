@@ -26,23 +26,7 @@ const notes = ref({});
      });
   });
 
-  const handleNote = async ()=>{
-    const lastId = ref(notes.value.length ? notes.value[notes.value.length -1].id : 0);
-   console.log(lastId.value);
-    const newNote = ref({
-      id: lastId.value,
-      title: pad.value.title,
-      content: pad.value.content,
-      created_at: new Date().toISOString()
-    });
-    try {
-      await  axios.post('http://localhost:8000/notes', newNote.value).then(response =>{
-        notes.value.push(response.data);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  
 </script>
 
 <template>
